@@ -1,0 +1,181 @@
+Html {
+    box-sizing: border-box;
+}
+
+*,* ::after, *::before {
+    box-sizing: inherit;
+}
+body {
+    background-image: url(./assets/bg.jpg);
+    
+    
+}
+#container {
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+    margin: auto;
+    
+}
+#smicon {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+#face {
+    color: blue;
+    opacity: .7;
+    border-left: dotted;
+    border-color: white;
+    
+}
+#twitter {
+    color: lightblue;
+    opacity: .7;
+}
+#youtube {
+    color: red;
+    opacity: .7;
+}
+#rss {
+    color: orange;
+    opacity: .7;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    color: white;
+   
+    
+}
+nav li {
+    background-color: red;
+    font-weight: bolder;
+    margin: auto;
+    padding: 0 10px;
+    
+}
+i {
+    margin: 5px
+}
+#topimage {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    border: 8px solid white;
+    position:relative;
+}
+#topimage img{
+    position: relative;
+    right: 225px;
+    bottom: 121px;
+}
+#topimage :nth-child(2) {
+    right: auto;
+    opacity: .4;
+    position:absolute;
+    top:0;
+    left:0;
+}
+#topimage :nth-child(3) {
+    position: absolute;
+    right: auto;
+    bottom: 69px;
+}
+#articles {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 35px;
+}
+
+#article1, #article2, #article3 {
+    background-color: white;
+    width: 325px;
+}
+#articles p, h2 {
+    padding: 10px;
+}
+#article1 a, #article2 a, #article3 a {
+    display: flex;
+    justify-content: center;
+    color: red;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+.skaters {
+    display: grid;
+    height: 600px; 
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    margin-top: 30px;
+    
+}
+.skater1 {
+    grid-area: 1 /  1 / 1 / 1;
+    background-image: url(./assets/sk8er-4.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 4px solid white;
+}
+.skater2 {
+    grid-area: 1 / 2 / 1 / 2;
+    background-image: url(./assets/sk8er-3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 4px solid white;
+}
+.skater4 {
+    grid-area: 1 / 3 / span 2 / span 2;
+    background-image: url(./assets/sk8er-2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    
+    border: 4px solid white;
+}
+.skater3 {
+    grid-area: 2 / 1 / span 1 / span 2;
+    background-image: url(./assets/sk8er-1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 4px solid white;
+}
+#boards {
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    margin-top: 20px;
+    padding: 10px;
+}
+#contactform {
+    display: flex;
+    background-color: white;
+    margin-top: 25px;
+}
+#contact {
+    display: flex;
+    flex-flow: wrap row;
+    width: 55%
+}
+#form {
+    display: flex;
+    flex-direction: column;
+}
+input {
+    padding: 10px;
+    width: 400px;
+}
+textarea {
+    width: 400px;
+}
+#container div {
+    box-shadow: 0 4px rgba(0, 0, 0, .4);
+}
+
+
